@@ -20,9 +20,17 @@
     <p class="artigo-autor">por:Graziele Gaspar</p>
     <p>sejam bem vindos ao meu blog! será uma experiência louca.</p>
     </div>
-    
-
+ <button>Curtir<span>0</span></button>   
 </main>
 </body>
+<script>
+    const botao = document.querySelector("button");
+botao.addEventListener("click",botaoClicado);
 
-</html>
+function botaoClicado(){
+let texto = botao.querySelector("span")
+texto.textContent++;
+}
+</script>
+
+ </html>
